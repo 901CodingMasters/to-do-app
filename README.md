@@ -21,3 +21,7 @@ Alexia Hall.
 
 <img src="https://github.com/901CodingMasters/to-do-app/blob/9d2afb76a7b2851807d72717332afc55281962d8/assets/Untitled%20Diagram.drawio.png" alt="image" width="1000" height="600">
 
+## Diagram
+
+<img src="https://github.com/901CodingMasters/to-do-app/blob/998c64a106e189b8f720c72095e1cd97ade8b777/assets/diagramforprogram.png" alt="image" width="1000" height="600">
+
