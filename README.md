@@ -17,4 +17,4 @@ Alexia Hall.
 
 ## WireFrame
 
-<img src="https://github.com/901CodingMasters/to-do-app/blob/843c08d794404fb660589c70fe857c0069573894/assets/wireframe.png" alt="image" width="700" height="600">
+<img src="https://github.com/901CodingMasters/to-do-app/blob/843c08d794404fb660589c70fe857c0069573894/assets/wireframe.png" alt="image" width="1000" height="600">
