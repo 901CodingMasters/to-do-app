@@ -1,6 +1,7 @@
 // Global Variables to contain the container (form) and the submit button (input)
 let container = document.getElementById("containerForm");
-let submitButton = document.getElementById("todoText")
+let todoList = document.getElementById("todoListContainer");
+let submitButton = document.getElementById("todoText");
 
 // Setting the state of two objects, one to an empty string and one to an empty array
 let stateArray = [];
@@ -21,11 +22,31 @@ submitButton.value = valueArrayDefault[randomVar]
 }
 // This event listener listens for a 'submit' and triggers an event, which prevents the default, sets submitvalue to the value of the button.
 container.addEventListener("submit", function(event){
+    
+    let inputBox = document.createElement("input");
+    let labelBox = document.createElement("label");
     event.preventDefault();
     submitValue = submitButton.value
+    if (submitValue === ""){
+        alert ("Please Enter Something...")
+        return
+    }
+    for (i = 0; i < valueArrayDefault;i++){
+        if (submitValue === valueArrayDefault[i]){
+            alert("Enter an Idea");
+            console.log(i)
+           
+        }
+    }
+    labelBox.textContent = submitValue;
+    todoList.append(inputBox)
+    inputBox.type = "checkbox";
+    todoList.append(labelBox);
     randomTextPrompt();
+
 });
 
 
 //We call the function so the value inside the input is filled with a random text!
 randomTextPrompt();
+
