@@ -10,7 +10,7 @@ https://trello.com/b/sSX4n557/todolist
 
 ##  Members
 
-Georlisha Minter.
+Georleshia Minter.
 Conner Thompson.
 Kat.
 Alexia Hall.

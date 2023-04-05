@@ -1,0 +1,88 @@
+#nav
+#linkedin1{
+    position: absolute;
+    top: 80px;
+    right: 10;
+    width:10% ;
+    height: 10%;
+    position: relative;
+    margin-left: auto;
+}
+#linkedin2{
+    position: absolute;
+    top: 80px;
+    right: 10%;
+    width:10% ;
+    height: 10%;
+    position: relative;
+    margin-left: auto;
+}
+
+#github1{
+    position: absolute;
+    top: 80px;
+    right: 10%;
+    width:10% ;
+    height: 10%;
+    position: absolute;
+    margin-left: auto;
+}
+
+#github2{
+    position: absolute;
+    top: 80px;
+    right: 10%;
+    width:10% ;
+    height: 10%;
+    position: absolute;
+    margin-left: auto;
+}
+
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffcab0;
+  position: inline-block;
+  top: 0;
+  width: 100%;
+}
+div{
+    background-image: linear-gradient(#f7f6de, #fa7e0a, #8f0e0e);
+  }
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active)
+ 
+.first-color { 
+        background: #e0ffcd; 
+ }
+        
+    .second-color { 
+        background: #fdffcd; 
+    }
+    
+    .third-color { 
+        background: #ffebbb; 
+    }
+    
+    .fourth-color { 
+        background: #ffcab0;
+
+.active {
+  background-color: #04AA6D;
+}
