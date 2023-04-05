@@ -1,3 +1,5 @@
+// Created by Conner Thompson
+
 // Global Variables to contain the container (form) and the submit button (input)
 let container = document.getElementById("containerForm");
 let todoList = document.getElementById("todoListContainer");
@@ -25,26 +27,38 @@ container.addEventListener("submit", function(event){
     
     let inputBox = document.createElement("input");
     let labelBox = document.createElement("label");
+    inputBox.setAttribute('id','todoItems')
     event.preventDefault();
     submitValue = submitButton.value
+    // Input Validation for the submitted value
     if (submitValue === ""){
         alert ("Please Enter Something...")
         return
     }
-    for (i = 0; i < valueArrayDefault;i++){
+    for (i = 0; i < valueArrayDefault.length;i++){
         if (submitValue === valueArrayDefault[i]){
-            alert("Enter an Idea");
-            console.log(i)
-           
+            alert("Don't enter our prompts!");
+            return
         }
     }
+    // Appending Label and Input to the container
     labelBox.textContent = submitValue;
     todoList.append(inputBox)
     inputBox.type = "checkbox";
     todoList.append(labelBox);
+    //Resetting the Text Box
     randomTextPrompt();
-
+    console.log(inputBox)
 });
+let checkbox = document.getElementById("todoItems")
+checkbox.addEventListener('change', function(){
+    if (this.checked){
+        console.log("poop")
+    }
+})
+
+
+
 
 
 //We call the function so the value inside the input is filled with a random text!
