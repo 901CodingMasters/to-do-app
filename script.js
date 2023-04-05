@@ -27,6 +27,8 @@ container.addEventListener("submit", function(event){
     
     let inputBox = document.createElement("input");
     let labelBox = document.createElement("label");
+    let removeButton = document.createElement("button")
+
     inputBox.setAttribute('id','todoItems')
     event.preventDefault();
     submitValue = submitButton.value
@@ -43,19 +45,29 @@ container.addEventListener("submit", function(event){
     }
     // Appending Label and Input to the container
     labelBox.textContent = submitValue;
+    removeButton.textContent = "X";
     todoList.append(inputBox)
     inputBox.type = "checkbox";
     todoList.append(labelBox);
+    todoList.append(removeButton)
     //Resetting the Text Box
     randomTextPrompt();
     console.log(inputBox)
+    if (removeButton = true){
+        removeList();
+    }
 });
 let checkbox = document.getElementById("todoItems")
-checkbox.addEventListener('change', function(){
-    if (this.checked){
-        console.log("poop")
-    }
-})
+// checkbox.addEventListener('change', function(){
+//     if (this.checked){
+//         console.log("poop")
+//     }
+// })
+
+function removeList(event){
+    let target = event.target;
+    event.removeC
+}
 
 
 
