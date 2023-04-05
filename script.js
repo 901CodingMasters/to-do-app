@@ -27,9 +27,9 @@ container.addEventListener("submit", function(event){
     
     let inputBox = document.createElement("input");
     let labelBox = document.createElement("label");
-    let removeButton = document.createElement("button")
+    let removeButton = document.createElement("button");
+    let todoDiv = document.createElement("div")
 
-    inputBox.setAttribute('id','todoItems')
     event.preventDefault();
     submitValue = submitButton.value
     // Input Validation for the submitted value
@@ -46,28 +46,39 @@ container.addEventListener("submit", function(event){
     // Appending Label and Input to the container
     labelBox.textContent = submitValue;
     removeButton.textContent = "X";
-    todoList.append(inputBox)
+    removeButton.style.visibility = "hidden";
+    todoList.append(todoDiv)
+    todoDiv.append(inputBox)
     inputBox.type = "checkbox";
-    todoList.append(labelBox);
-    todoList.append(removeButton)
+    todoDiv.append(labelBox);
+    todoDiv.append(removeButton)
     //Resetting the Text Box
     randomTextPrompt();
-    console.log(inputBox)
-    if (removeButton = true){
-        removeList();
-    }
-});
-let checkbox = document.getElementById("todoItems")
-// checkbox.addEventListener('change', function(){
-//     if (this.checked){
-//         console.log("poop")
+
+//     let checkbox = document.querySelector("input[type=checkbox]")
+//     checkbox.addEventListener("change", function(){
+//     if (checkbox.checked == true){
+//         removeButton.style.visibility = "visible";  
+//     }else if (checkbox.checked == false){
+//        removeButton.style.visibility = "hidden";   
 //     }
+    
 // })
 
-function removeList(event){
-    let target = event.target;
-    event.removeC
+let checkbox = document.querySelector("input[type=checkbox]")
+todoList.addEventListener("change", function(event){
+
+if (event.target.checked == true){
+    removeButton.style.visibility = "visible";  
+}else if (event.target.checked == false){
+   removeButton.style.visibility = "hidden";   
 }
+
+})
+});
+
+
+
 
 
 
