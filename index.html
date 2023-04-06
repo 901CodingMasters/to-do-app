@@ -12,21 +12,24 @@
 
 <!--Created By Georleshia Minter-->
 <nav>
-    <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="https://www.linkedin.com/in/connerkt/"><img src="icon/linkedin-logo.png" id="linkedin1" alt="linkedin profile"></a></li>
-  <li><a href="https://www.linkedin.com/in/georleshia-minter-369186163/"><img src="icon/linkedin-logo.png" id="linkedin2" alt="linkedin profile"></a></li>
-  <li><a href="https://github.com/ConnerKT"><img src="icon/github-logo.png" id="github1" alt="github profile"></a></li>
-  <li><a href="https://github.com/georleshiam"><img src="icon/github-logo.png" id="github2" alt="github profile"></a></li>
-</ul>
+    <div id="siteDirectory">
+        <a href="#home">Home</a>
+    </div>
+    <div id="contact">
+        <a href="https://www.linkedin.com/in/connerkt/"><img src="icon/linkedin-logo.png" class="imageClass"alt="connerLink"></a>
+        <a href="https://www.linkedin.com/in/georleshia-minter-369186163/"><img src="icon/linkedin-logo.png" class="imageClass" alt="minterLink"></a>
+        <a href="https://github.com/ConnerKT"><img src="icon/github-logo.png" class="imageClass" alt="connerGit"></a></li>
+        <a href="https://github.com/georleshiam"><img src="icon/github-logo.png" class="imageClass" alt="minterGit"></a>
+    </div>
+    
+  
 </nav>
-<div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
-  <h1>901 CodingMasters</h1>
-  <h2>The ultimate to-do list.</h2>
+    <header id="home">
+        <h1>901 CodingMasters</h1>
+        <h2>The ultimate to-do list.</h2>
+    </header>
+ 
 
-
-</body>
-</html>
 
 
 
@@ -42,7 +45,7 @@
 
     </form>
     <form action="" id="containerForm">
-        <label for="todoText">Idea:</label>
+        <label for="todoText"></label>
         <input type="text" onfocus="this.value=''"id="todoText" name="todoText" value="Enter your next plan!">
         <input type="submit" value="Add!">
     </form>
