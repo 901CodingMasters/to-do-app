@@ -1,88 +1,90 @@
-#nav
-#linkedin1{
-    position: absolute;
-    top: 80px;
-    right: 10;
-    width:10% ;
-    height: 10%;
-    position: relative;
-    margin-left: auto;
+html,
+body {
+    height: 100%;
 }
-#linkedin2{
-    position: absolute;
+
+#linkedin1 {
+    /* position: absolute;
     top: 80px;
-    right: 10%;
-    width:10% ;
-    height: 10%;
-    position: relative;
+    right: 10; */
+    
+    /* position: relative; */
     margin-left: auto;
 }
 
-#github1{
-    position: absolute;
-    top: 80px;
-    right: 10%;
-    width:10% ;
+#mainContainer {
+    padding: 20px;
+
+    height: 100%;
+}
+
+/* #linkedin2 { 
+
+    
+}
+
+ #github1 {
+    /* width: 100%;
+    height: 100%; 
+}
+
+
+#github2 {
+    
+}
+
+body {
+    margin: 0;
+} */
+
+#logo2 {
+    /* background-image: */
+     /* border: solid 2px;  */
+     width:150px;
+     height: 100%;
+    /* border-color: green;*/
+}
+
+.nav {
+    display: flex;  
+    /* width: 100bht; */
+    /* height: 10%; */
+    width: 100%;
     height: 10%;
-    position: absolute;
-    margin-left: auto;
+    /* border: solid red; */
+    background-color:grey;
+    gap:500px
+}
+img{
+    width: 50px;
+    /* border: solid brown; */
+    margin: 10px;
+
+
+}
+#navIcons {
+    justify-content: right;
+    display: flex;
+    height: 100%; 
+    width: 50%;
+    /* border: solid blue; */
+    
 }
 
-#github2{
-    position: absolute;
-    top: 80px;
-    right: 10%;
-    width:10% ;
-    height: 10%;
-    position: absolute;
-    margin-left: auto;
-}
-
-body {margin:0;}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #ffcab0;
-  position: inline-block;
-  top: 0;
-  width: 100%;
-}
-div{
+#mainContainer {
     background-image: linear-gradient(#f7f6de, #fa7e0a, #8f0e0e);
-  }
-
-li {
-  float: left;
 }
+
 
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 li a:hover:not(.active)
- 
-.first-color { 
-        background: #e0ffcd; 
- }
-        
-    .second-color { 
-        background: #fdffcd; 
-    }
-    
-    .third-color { 
-        background: #ffebbb; 
-    }
-    
-    .fourth-color { 
-        background: #ffcab0;
-
-.active {
+/* .active {
   background-color: #04AA6D;
-}
+} */
