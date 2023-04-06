@@ -59,26 +59,15 @@ container.addEventListener("submit", function (event) {
     //Resetting the Text Box
     randomTextPrompt();
 
-    //     let checkbox = document.querySelector("input[type=checkbox]")
-    //     checkbox.addEventListener("change", function(){
-    //     if (checkbox.checked == true){
-    //         removeButton.style.visibility = "visible";  
-    //     }else if (checkbox.checked == false){
-    //        removeButton.style.visibility = "hidden";   
-    //     }
-
-    // })
 
 
     todoList.addEventListener("change", function (event) {
 
         let removeButtonClass = document.getElementsByClassName("removeButton");
-        // console.log("event.target.index", event.target.index)
         for (let i = 0; i < removeButtonClass.length; i++){
             if( removeButtonClass[i].index === event.target.index){
                 if (removeButtonClass[i].style.visibility == "hidden") {
                     removeButtonClass[i].style.visibility = "visible";
-                    console.log("removeButtonClass[i].index", removeButtonClass[i].index, event.target.index)
                 } else if (removeButtonClass[i].style.visibility  == "visible") {
                     removeButtonClass[i].style.visibility = "hidden";
                 }
@@ -86,7 +75,13 @@ container.addEventListener("submit", function (event) {
         }
       
     })
+
+    removeButton.addEventListener("click", function(event){
+        event.preventDefault();
+        removeButton.parentElement.remove();
+    })
 });
+
 
 
 
